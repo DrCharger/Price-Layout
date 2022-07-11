@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+.page {
+  background-color: #141b1c;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@import 'variables.scss';
+@import 'price-card.scss';

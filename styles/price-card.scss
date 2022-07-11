@@ -1,0 +1,112 @@
+.price-card {
+  width: 380px;
+  height: 770px;
+  background-color: $backgroundColor;
+  margin-right: 18px;
+  padding: 33px 0 40px;
+  position: relative;
+  overflow: hidden;
+  &:last-child {
+    margin-right: 0;
+  }
+  &_title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+    color: $textColor;
+    margin: 0;
+  }
+  &_subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $textColor;
+    margin: 0;
+    margin-bottom: $margin - 7;
+  }
+  &_price {
+    background-color: $firstColor;
+    height: 105px;
+    text-align: center;
+    line-height: 105px;
+    font-weight: 700;
+    font-size: 55px;
+    color: $textColor;
+    margin-bottom: $margin;
+  }
+  &_description {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: $textColor;
+    width: 90%;
+    margin: auto;
+    margin-bottom: $margin;
+    opacity: 0.8;
+  }
+  &_option {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: $margin - 1;
+    &_list {
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+      color: $textColor;
+      height: 50px;
+      line-height: 50px;
+      opacity: 0.8;
+      &:nth-child(odd) {
+        background-color: rgba(42, 52, 56, 1);
+      }
+      &_icon {
+        width: 15px;
+        height: 13px;
+        margin: 0 22px;
+      }
+    }
+  }
+  &_box {
+    display: flex;
+    &_order-btn {
+      height: 40px;
+      width: 155px;
+      background-color: $firstColor;
+      border-radius: 20px;
+      margin: auto;
+      font-size: 14px;
+      color: $textColor;
+      padding: 0;
+      border: 0;
+    }
+  }
+  &:nth-child(2) &_price {
+    background-color: $secondColor;
+  }
+  &:nth-child(2) &_box_order-btn {
+    background-color: $secondColor;
+  }
+  &:last-child &_price {
+    background-color: $thirdColor;
+  }
+  &:last-child &_box_order-btn {
+    background-color: $thirdColor;
+  }
+  &_badge {
+    position: absolute;
+    right: -25px;
+    top: 25px;
+    background-color: rgba(220, 63, 69, 1);
+    width: 122px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $textColor;
+    text-align: center;
+    transform: rotate(45deg);
+  }
+}
