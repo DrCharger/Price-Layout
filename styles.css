@@ -24,6 +24,36 @@ html {
   position: relative;
   overflow: hidden;
 }
+.price-card:nth-child(1) .price-card__price {
+  background-color: rgb(91, 177, 137);
+  height: 105px;
+  text-align: center;
+  line-height: 105px;
+  font-weight: 700;
+  font-size: 55px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
+.price-card:nth-child(2) .price-card__price {
+  background-color: rgb(58, 107, 165);
+  height: 105px;
+  text-align: center;
+  line-height: 105px;
+  font-weight: 700;
+  font-size: 55px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
+.price-card:nth-child(3) .price-card__price {
+  background-color: rgb(236, 99, 42);
+  height: 105px;
+  text-align: center;
+  line-height: 105px;
+  font-weight: 700;
+  font-size: 55px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
 .price-card:last-child {
   margin-right: 0;
 }
@@ -44,16 +74,6 @@ html {
   margin: 0;
   margin-bottom: 33px;
 }
-.price-card_price {
-  background-color: rgb(91, 177, 137);
-  height: 105px;
-  text-align: center;
-  line-height: 105px;
-  font-weight: 700;
-  font-size: 55px;
-  color: rgb(255, 255, 255);
-  margin-bottom: 40px;
-}
 .price-card_description {
   font-weight: 300;
   font-size: 15px;
@@ -71,7 +91,7 @@ html {
   margin: 0;
   margin-bottom: 39px;
 }
-.price-card_option_list {
+.price-card_option-list {
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -80,10 +100,10 @@ html {
   line-height: 50px;
   opacity: 0.8;
 }
-.price-card_option_list:nth-child(odd) {
+.price-card_option-list:nth-child(odd) {
   background-color: rgb(42, 52, 56);
 }
-.price-card_option_list_icon {
+.price-card_option-list_icon {
   width: 15px;
   height: 13px;
   margin: 0 22px;
@@ -102,14 +122,8 @@ html {
   padding: 0;
   border: 0;
 }
-.price-card:nth-child(2) .price-card_price {
-  background-color: rgb(58, 107, 165);
-}
 .price-card:nth-child(2) .price-card_box_order-btn {
   background-color: rgb(58, 107, 165);
-}
-.price-card:last-child .price-card_price {
-  background-color: rgb(236, 99, 42);
 }
 .price-card:last-child .price-card_box_order-btn {
   background-color: rgb(236, 99, 42);

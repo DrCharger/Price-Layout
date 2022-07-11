@@ -6,6 +6,36 @@
   padding: 33px 0 40px;
   position: relative;
   overflow: hidden;
+  &:nth-child(1) .price-card__price {
+    background-color: $firstColor;
+    height: 105px;
+    text-align: center;
+    line-height: 105px;
+    font-weight: 700;
+    font-size: 55px;
+    color: $textColor;
+    margin-bottom: $margin;
+  }
+  &:nth-child(2) .price-card__price {
+    background-color: $secondColor;
+    height: 105px;
+    text-align: center;
+    line-height: 105px;
+    font-weight: 700;
+    font-size: 55px;
+    color: $textColor;
+    margin-bottom: $margin;
+  }
+  &:nth-child(3) .price-card__price {
+    background-color: $thirdColor;
+    height: 105px;
+    text-align: center;
+    line-height: 105px;
+    font-weight: 700;
+    font-size: 55px;
+    color: $textColor;
+    margin-bottom: $margin;
+  }
   &:last-child {
     margin-right: 0;
   }
@@ -26,16 +56,6 @@
     margin: 0;
     margin-bottom: $margin - 7;
   }
-  &_price {
-    background-color: $firstColor;
-    height: 105px;
-    text-align: center;
-    line-height: 105px;
-    font-weight: 700;
-    font-size: 55px;
-    color: $textColor;
-    margin-bottom: $margin;
-  }
   &_description {
     font-weight: 300;
     font-size: 15px;
@@ -52,7 +72,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: $margin - 1;
-    &_list {
+    &-list {
       font-weight: 300;
       font-size: 15px;
       line-height: 18px;
@@ -84,15 +104,11 @@
       border: 0;
     }
   }
-  &:nth-child(2) &_price {
-    background-color: $secondColor;
-  }
+
   &:nth-child(2) &_box_order-btn {
     background-color: $secondColor;
   }
-  &:last-child &_price {
-    background-color: $thirdColor;
-  }
+
   &:last-child &_box_order-btn {
     background-color: $thirdColor;
   }
